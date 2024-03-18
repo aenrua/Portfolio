@@ -34,7 +34,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 main section {
-    margin: 0 140px 160px;
+    margin: 160px 140px 0;
 }
 
 strong {
@@ -243,6 +243,10 @@ nav {
     color: rgb(255, 255, 0);
 }
 
+#skillsText .fa-database:hover {
+    color: rgb(219, 117, 51)
+}
+
 #skillsText .fa-wordpress-simple:hover {
     color: #26759c;
 }
@@ -278,4 +282,118 @@ nav {
     visibility: visible;
     opacity: 1;
     transition: opacity 0.15s;
+}
+
+/* Projects section */
+#projects {
+    margin-left: 290px;
+    margin-right: 290px;
+}
+
+#projects h1 {
+    padding: 5px 30px 0 !important;
+}
+
+#projectsText {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 0 30px 30px;
+    margin: 30px 0 0;
+}
+
+#projectsText>* {
+    max-width: calc(50% - 2rem);
+    flex: 1 1 auto;
+}
+
+#projectsText>a {
+    position: relative;
+}
+
+.projectsImages {
+    object-fit: contain;
+    max-width: 100%;
+    opacity: 1;
+    transition: 0.15s;
+}
+
+.linkText {
+    position: absolute;
+    font-size: 24px;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: .15s ease;
+}
+
+#projectsText>a:hover .projectsImages {
+    opacity: 0.3;
+}
+
+#projectsText>a:hover .linkText {
+    opacity: 1;
+}
+
+@media (max-width: 1024px) {
+    #projectsContent {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+/* Contact section */
+#contact {
+    margin: 160px 290px;
+}
+
+#contact h1 {
+    padding: 5px 30px 0;
+}
+
+#contactText {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin: 30px 0 0;
+    padding: 0 30px 0;
+}
+
+.emailLink {
+    text-decoration: underline 0.11em rgba(255, 255, 255, 0);
+    transition: text-decoration-color 0.15s;
+}
+
+.emailLink:hover {
+    text-decoration-color: var(--secondary-color);
+}
+
+.btn {
+    display: inline-block;
+    background-color: var(--primary-color);
+    border-style: solid;
+    border-radius: 4px;
+    border-width: 2px;
+    border-color: var(--primary-color);
+    padding: 10px 15px;
+    font-size: 26px;
+    text-decoration: none;
+    transition: all 0.15s ease;
+}
+
+.btn:hover {
+    background-color: rgba(255, 255, 255, 0);
+    border-color: var(--secondary-color);
+}
+
+@media (max-width: 1024px) {
+    #contactContent {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }
