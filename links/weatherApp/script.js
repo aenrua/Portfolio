@@ -64,11 +64,12 @@ window.addEventListener(`load`, () => {
                     userWeatherDetails.textContent = `${description}`
                     userSunrise.textContent = `${sunriseGMT.toLocaleTimeString(`default`, { hour: `2-digit`, minute: `2-digit`, hourCycle: `h24` })}, ${sunsetGMT.toLocaleDateString(`default`, { weekday: `long`, day: `2-digit`, month: `short` }).replace(`,`, ``)}`
                     userSunset.textContent = `${sunsetGMT.toLocaleTimeString(`default`, { hour: `2-digit`, minute: `2-digit`, hourCycle: `h24` })}, ${sunsetGMT.toLocaleDateString(`default`, { weekday: `long`, day: `2-digit`, month: `short` }).replace(`,`, ``)}`
-                    document.body.style.background = bgColour;
                     if (currentTime >= sunriseGMT && currentTime <= sunsetGMT) {
                         document.body.style.background = bgColour;
+                        document.body.style.color = `#000000`;
                     } else {
                         document.body.style.background = `radial-gradient(circle, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.99) 45%, rgba(0, 0, 0, 1) 100%)`;
+                        document.body.style.color = `#ffffff`;
                     }
                 })
 
