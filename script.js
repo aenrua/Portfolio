@@ -79,20 +79,20 @@ mobNav()
 window.addEventListener(`resize`, mobNav)
 
 mobMenu.addEventListener(`click`, () => {
+    body.style.overflow = `hidden`;
     if (navLinks.style.transform === `translateX(-100%)`) {
         navLinks.style.transform = `translateX(0)`;
         navLinks.style.transition = `transform 0.5s ease`;
-        body.style.overflowY = `hidden`;
     }
     else {
         linkClick();
-        body.style.overflowY = ``;
     }
 });
 
 function linkClick() {
     navLinks.style.transform = `translateX(-100%)`;
     navLinks.style.transition = `transform 0.5s ease`;
+    body.style.overflow = ``;
 }
 
 logo.addEventListener(`click`, () => {
@@ -148,7 +148,7 @@ const introLinks = document.querySelector(`#intro .links`)
 
 function defaultStyling() {
     lines.forEach(line => {
-        line.style.overflowY = `visible`;
+        line.style.overflow = `visible`;
         line.style.width = `auto`;
         line.style.textAlign = ``;
         line.style.whiteSpace = ``;
@@ -160,7 +160,7 @@ function defaultStyling() {
     introLinks.style.opacity = ``;
     introLinks.style.visibility = ``;
     introLinks.style.animation = ``;
-    body.style.overflowY = ``;
+    body.style.overflow = ``;
 }
 
 function line1Animation() {
@@ -221,10 +221,10 @@ function introLinksAnimation() {
         introLinks.style.opacity = `0`;
         introLinks.style.visibility = `hidden`;
         introLinks.style.animation = `slide-fade 0.5s 5.9s ease-out forwards`;
-        body.style.overflowY = `hidden`;
+        body.style.overflow = `hidden`;
         body.style.paddingRight = `${scrollbarWidth}px`;
         setTimeout(() => {
-            body.style.overflowY = ``;
+            body.style.overflow = ``;
             body.style.paddingRight = ``;
         }, 6400);
     }
