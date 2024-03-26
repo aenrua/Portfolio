@@ -350,7 +350,7 @@ nav {
 @media (max-width: 768px) {
     #about {
         margin: 0 2.5rem 0;
-        overflow: hidden;
+        overflow-x: hidden;
     }
 }
 
@@ -782,7 +782,7 @@ nav {
 @media (max-width: 768px) {
     #projects {
         margin: 10rem 2.5rem 0;
-        overflow: hidden;
+        overflow-x: hidden;
     }
 }
 
@@ -864,7 +864,7 @@ nav {
 @media (max-width: 768px) {
     #contact {
         margin: 10rem 2.5rem;
-        overflow: hidden;
+        overflow-x: hidden;
     }
 }
 
