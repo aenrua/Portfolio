@@ -1,0 +1,66 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    background: rgb(255, 128, 36);
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.location {
+    font-size: 5rem;
+    font-weight: 800;
+    text-align: center;
+}
+
+.weather {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px 0 65px;
+}
+
+.unit {
+    margin: 0 0 15px;
+    font-size: 4rem;
+    text-align: center;
+}
+
+.details {
+    font-size: 2.75rem;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.sunTimes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.sunTimes h4 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 1.25rem;
+}
+
+@media (max-width: 323px) {
+    .location {
+        font-size: 4.5rem;
+    }
+}

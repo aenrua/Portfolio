@@ -5,78 +5,93 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Anton Agejev</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/logo/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/logo/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/logo/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inconsolata&family=Quicksand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
 </head>
 
 <body>
     <!-- Navbar -->
-    <section id="navBar">
-        <nav>
-            <div class="siteLogo">
-                <a href="#">
-                    <img src="Images/Logo/favicon.ico" alt="logo">
-                </a>
-            </div>
-            <div class="navLinks">
+    <nav>
+        <div id="navBar">
+            <a href="#">
+                <svg id="logo" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1200">
+                    <polygon class="cls-1"
+                        points="950.02 348.89 917.68 348.89 1023.35 81.95 1055.63 81.9 950.02 348.89" />
+                    <polygon class="cls-1"
+                        points="1184.18 111.72 1043.81 111.92 1023.4 81.94 1196.51 81.7 1184.18 111.72" />
+                    <polygon class="cls-1"
+                        points="765.36 1131.65 765.32 1052.65 1164.08 81.7 1196.51 81.7 765.36 1131.65" />
+                    <rect class="cls-1" x="519.35" y="442.76" width="374.91" height="30" />
+                    <rect class="cls-1" x="501.09" y="318.89" width="440.87" height="30" />
+                    <path class="cls-1"
+                        d="m804.39,989.85L431.43,81.72h0s0,0,0,0h0s0,0,0,0h0s-9.88,24.06-9.88,24.06h0S.17,1131.8.17,1131.8l109.63-.15,105.63-267.02h440.27l109.67,267.03,39.04-141.8Zm-551.84-219.1l169.35-428.12,9.52-24.02,10.11,24.56h0s175.6,427.58,175.6,427.58H252.56Z" />
+                    <polygon class="cls-1"
+                        points="735.89 890.2 716.6 856.82 880.51 442.76 912.88 442.76 735.89 890.2" />
+                </svg>
+            </a>
+            <div id="navLinks">
                 <a href="#about">About</a>
                 <a href="#skills">Skills</a>
                 <a href="#projects">Projects</a>
                 <a href="#contact">Contact</a>
             </div>
-            <div>
+            <div id="mobMenu">
+                <i class="fa-solid fa-bars"></i>
             </div>
-        </nav>
-    </section>
+        </div>
+    </nav>
     <!-- Main content -->
     <main>
         <!-- Intro -->
         <section id="intro">
-            <div class="introContent">
-                <div id="introText">
-                    <h2>I'm</h2>
-                    <h1>
-                        <strong>Anton Agejev</strong>
-                    </h1>
-                    <p>
-                        Junior Software Developer
-                    </p>
-                    <br>
-                    <div id="introLinks">
-                        <a href="https://github.com/aenrua?tab=repositories" target="_blank">
-                            <i class="fa-brands fa-github"></i>
-                        </a>
-                        <a href="https://www.linkedin.com/in/antonagejev/" target="_blank">
-                            <i class="fa-brands fa-linkedin"></i>
-                        </a>
+            <div class="content">
+                <div>
+                    <div class="typingEffect">
+                        <h2 class="line1">I'm</h2>
                     </div>
+                </div>
+                <div>
+                    <div class="typingEffect">
+                        <h1 class="line2">Anton Agejev</h1>
+                    </div>
+                </div>
+                <div>
+                    <div class="typingEffect">
+                        <p class="line3">
+                            Junior Software Developer
+                        </p>
+                    </div>
+                </div>
+                <br>
+                <div class="links">
+                    <a href="https://github.com/aenrua?tab=repositories" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/antonagejev/" target="_blank">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
                 </div>
             </div>
         </section>
         <!-- About -->
         <section id="about">
-            <div id="corners" class="about">
+            <div id="corners">
                 <h1>About</h1>
-                <div id="aboutContent">
-                    <div id="aboutText">
+                <div class="content">
+                    <div>
                         <p>
                             Hey! I'm a <strong>Junior Software Developer</strong> based in London, UK, and am looking to
-                            start a career as a software developer.
+                            build my career and enhance my skills.
                         </p>
                         <p>
                             I have a <strong>BSc in Observational Astronomy</strong>, a <strong>MSc in Science, Media
@@ -84,164 +99,314 @@
                             E&#8209;learning courses.
                         </p>
                         <p>
-                            I am currently undertaking a <strong>12&#8209;week Software Developer Bootcamp</strong> with
+                            I have recently completed a <strong>12&#8209;week Software Developer Bootcamp</strong> with
                             JustIT. I also have a passion for acting and performed in community theatre for a number of
                             years.
                         </p>
                     </div>
-                    <img id="aboutImage" src="Images/Pictures/IMG_20211030_152635_165~2.jpg" alt="picture-of-anton" />
+                    <img src="/images/pictures/IMG_20211030_152635_165~2.jpg" alt="picture-of-anton" />
                 </div>
                 <!-- Corners -->
-                <div id="top-left" class="borderCorner"></div>
-                <div id="top-right" class="borderCorner"></div>
-                <div id="bottom-right" class="borderCorner"></div>
-                <div id="bottom-left" class="borderCorner"></div>
+                <div class="top-left"></div>
+                <div class="bottom-right"></div>
             </div>
         </section>
         <!-- Skills -->
         <section id="skills">
             <div id="technicalSkills">
                 <h3>Technical skills</h3>
-                <div id="skillsContent">
-                    <div id="skillsText">
-                        <i class="fa-brands fa-html5"></i>
-                        <ul>
-                            <li>HTML</li>
-                        </ul>
+                <div class="content">
+                    <div class="skillType">
+                        <svg id="htmlIcon" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"
+                            preserveAspectRatio="xMidYMid">
+                            <path class="outline" d="M71,460 L30,0 481,0 440,460 255,512" />
+                            <path class="right" d="M256,472 L405,431 440,37 256,37" />
+                            <path class="left-num"
+                                d="M256,208 L181,208 176,150 256,150 256,94 255,94 114,94 115,109 129,265 256,265zM256,355 L255,355 192,338 188,293 158,293 132,293 139,382 255,414 256,414z" />
+                            <path class="right-num"
+                                d="M255,208 L255,265 325,265 318,338 255,355 255,414 371,382 372,372 385,223 387,208 371,208zM255,94 L255,129 255,150 255,150 392,150 392,150 392,150 393,138 396,109 397,94z" />
+                        </svg>
+                        <p>HTML5</p>
                     </div>
-                    <div id="skillsText">
-                        <i class="fa-brands fa-css3-alt"></i>
-                        <ul>
-                            <li>CSS</li>
-                        </ul>
+                    <div class="skillType">
+                        <svg id="cssIcon" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"
+                            preserveAspectRatio="xMidYMid">
+                            <path class="outline" d="M71.357 460.819L30.272 0h451.456l-41.129 460.746L255.724 512z" />
+                            <path class="right" d="M405.388 431.408l35.148-393.73H256v435.146z" />
+                            <path class="left-num"
+                                d="M124.46 208.59l5.065 56.517H256V208.59zM119.419 150.715H256V94.197H114.281zM256 355.372l-.248.066-62.944-16.996-4.023-45.076h-56.736l7.919 88.741 115.772 32.14.26-.073z" />
+                            <path class="right-num"
+                                d="M255.805 208.59v56.517H325.4l-6.56 73.299-63.035 17.013v58.8l115.864-32.112.85-9.549 13.28-148.792 1.38-15.176 10.203-114.393H255.805v56.518h79.639L330.3 208.59z" />
+                        </svg>
+                        <p>CSS3</p>
                     </div>
-                    <div id="skillsText">
-                        <i class="fa-brands fa-square-js"></i>
-                        <ul>
-                            <li>JavaScript</li>
-                        </ul>
+                    <div class="skillType">
+                        <svg id="jsIcon" viewBox="0 0 630 630" xmlns="http://www.w3.org/2000/svg"
+                            preserveAspectRatio="xMidYMid">
+                            <rect width="630" height="630" />
+                            <path
+                                d="m423.2 492.19c12.69 20.72 29.2 35.95 58.4 35.95 24.53 0 40.2-12.26 40.2-29.2 0-20.3-16.1-27.49-43.1-39.3l-14.8-6.35c-42.72-18.2-71.1-41-71.1-89.2 0-44.4 33.83-78.2 86.7-78.2 37.64 0 64.7 13.1 84.2 47.4l-46.1 29.6c-10.15-18.2-21.1-25.37-38.1-25.37-17.34 0-28.33 11-28.33 25.37 0 17.76 11 24.95 36.4 35.95l14.8 6.34c50.3 21.57 78.7 43.56 78.7 93 0 53.3-41.87 82.5-98.1 82.5-54.98 0-90.5-26.2-107.88-60.54zm-209.13 5.13c9.3 16.5 17.76 30.45 38.1 30.45 19.45 0 31.72-7.61 31.72-37.2v-201.3h59.2v202.1c0 61.3-35.94 89.2-88.4 89.2-47.4 0-74.85-24.53-88.81-54.075z" />
+                        </svg>
+                        <p>JavaScript</p>
                     </div>
-                    <div id="skillsText">
-                        <i class="fa-solid fa-database"></i>
-                        <ul>
-                            <li>SQL</li>
-                        </ul>
+                    <div class="skillType">
+                        <svg id="mysqlIcon" viewBox="-38.4 -38.4 332.80 332.80" version="1.1"
+                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                            preserveAspectRatio="xMidYMid">
+                            <g id="bg">
+                                <rect x="-38.4" y="-38.4" width="332.80" height="332.80" rx="43.264" />
+                            </g>
+                            <path
+                                d="M235.648276,194.211632 C221.729851,193.864559 210.942872,195.257272 201.895604,199.083964 C199.285899,200.127406 195.109927,200.128498 194.761767,203.433458 C196.154498,204.826189 196.328034,207.087716 197.546096,209.001055 C199.635192,212.479551 203.287247,217.178343 206.593317,219.614507 C210.246461,222.397748 213.900691,225.180989 217.727416,227.617153 C224.513092,231.793125 232.168625,234.22817 238.779677,238.404123 C242.608577,240.838067 246.434123,243.971711 250.261934,246.581411 C252.176407,247.971926 253.393381,250.234545 255.829549,251.104446 L255.829549,250.582732 C254.611442,249.016479 254.263282,246.754952 253.046308,245.015144 C251.307592,243.275341 249.566702,241.709083 247.826899,239.96928 C242.781025,233.1847 236.518133,227.268984 229.732547,222.397748 C224.166065,218.56995 211.986355,213.35055 209.724764,206.913051 C209.724764,206.913051 209.55014,206.73951 209.376604,206.56597 C213.204371,206.217787 217.727416,204.82618 221.381691,203.781623 C227.297466,202.215374 232.690457,202.563548 238.779677,200.998382 C241.562919,200.30203 244.347292,199.432129 247.130533,198.562222 L247.130533,196.997075 C244.00022,193.864532 241.737588,189.689684 238.431517,186.731778 C229.558965,179.075113 219.815379,171.595269 209.724764,165.332394 C204.330685,161.852792 197.371472,159.590151 191.630412,156.633369 C189.543536,155.587729 186.062797,155.06712 184.845823,153.327299 C181.713302,149.499523 179.973499,144.45476 177.711982,139.930579 C172.668329,130.360605 167.794863,119.749306 163.44541,109.658665 C160.315096,102.872993 158.400651,96.0872892 154.572862,89.8245233 C136.653166,60.2479054 117.167095,42.3281102 87.242308,24.7554574 C80.8048232,21.1023052 73.1503779,19.5360541 64.9730628,17.6227124 C60.6246649,17.4480683 56.2740469,17.1009966 51.9245072,16.9263525 C49.1412661,15.7082579 46.3569195,12.4033092 43.9207465,10.8370441 C34.0058755,4.5730961 8.42942301,-8.99607108 1.1220548,8.92370237 C-3.57563582,20.2324516 8.08126754,31.366477 12.0825475,37.1086812 C15.041536,41.1100178 18.8682195,45.6330512 20.9562053,50.1572463 C22.1742941,53.1129226 22.5213621,56.2465484 23.7394509,59.3779766 C26.523793,67.031339 29.1323922,75.5578744 32.7866404,82.691806 C34.7010855,86.3449577 36.7879657,90.1727422 39.2241297,93.477666 C40.6157457,95.3910055 43.0508086,96.2620126 43.5736286,99.3934363 C41.1385747,102.873029 40.9639284,108.092452 39.5711977,112.441992 C33.3083548,132.101492 35.7445143,156.4588 44.617071,170.89889 C47.4003121,175.247297 54.0124069,184.818421 62.8850316,181.164182 C70.7141415,178.032744 68.9743337,168.115626 71.2358604,159.41661 C71.7586894,157.327523 71.4105022,155.937017 72.4539446,154.545383 C72.4548508,154.718924 72.4539446,154.893561 72.4539446,154.893561 C74.8901041,159.764788 77.3251715,164.46251 79.5866891,169.333656 C84.980736,177.858025 94.3750434,186.731674 102.204103,192.647503 C106.381181,195.777808 109.686136,201.171877 114.905523,203.086313 L114.905523,202.563484 L114.557345,202.563484 C113.512801,200.997231 111.947645,200.301958 110.55602,199.083892 C107.424591,195.952463 103.943884,192.124665 101.50883,188.645081 C94.2025447,178.901486 87.7639408,168.115635 82.0228486,156.980496 C79.2396075,151.587555 76.8034481,145.671734 74.5419214,140.278811 C73.497378,138.189729 73.497378,135.059406 71.7575748,134.015973 C69.1478745,137.842647 65.3211911,141.148717 63.4067461,145.846417 C60.1028916,153.327344 59.7536034,162.548097 58.5355192,172.116947 C57.8402503,172.291598 58.187332,172.116947 57.8391493,172.465138 C52.2726627,171.072408 50.3582176,165.332394 48.2701955,160.460052 C43.0507905,148.107926 42.1808935,128.273684 46.7050387,114.008236 C47.923123,110.353988 53.142528,98.8717128 51.0545422,95.3921019 C50.0110998,92.0860273 46.5303924,90.1726969 44.6170529,87.5629967 C42.3555262,84.2569266 39.9193668,80.082065 38.35421,76.4278576 C34.1782383,66.6853811 32.0902615,55.898411 27.5672354,46.1548154 C25.4792496,41.6306665 21.8261069,36.9340837 18.8682195,32.7592063 C15.563264,28.0615284 11.9090067,24.7554574 9.29927023,19.1878506 C8.43046966,17.2745089 7.21128439,14.1430915 8.60290945,12.0550966 C8.95109211,10.6634847 9.64634733,10.1417599 11.0390689,9.79357497 C13.3005955,7.87912949 19.7380848,10.3152907 21.9995616,11.3587363 C28.4370509,13.9673251 33.8300058,16.4046087 39.2240527,20.0577513 C41.6591111,21.7975523 44.2688113,25.1036232 47.4002396,25.9735239 L51.0544833,25.9735239 C56.6220709,27.1905053 62.8849274,26.3216898 68.1043279,27.8868652 C77.3261638,30.843648 85.6758644,35.1942543 93.1579696,39.8919512 C115.95003,54.332049 134.738553,74.8626147 147.440063,99.3934454 C149.528049,103.39367 150.396845,107.04901 152.31129,111.22389 C155.965538,119.749365 160.488578,128.448376 164.14173,136.799218 C167.794872,144.975401 171.274474,153.327362 176.493861,160.113048 C179.104667,163.765094 189.542403,165.67953 194.240026,167.593975 C197.719632,169.159141 203.113711,170.551871 206.245112,172.465206 C212.159801,176.117243 218.075576,180.29433 223.643145,184.295646 C226.427474,186.382535 235.125402,190.733144 235.648231,194.21165 L235.648276,194.211632 L235.648276,194.211632 Z" />
+                            <path
+                                d="M58.1864892,43.0222644 C55.2286063,43.0222644 53.1417305,43.3715526 51.0537447,43.8932806 C51.0537447,43.8923744 51.0537447,44.0679225 51.0537447,44.2414633 L51.4019319,44.2414633 C52.794658,47.0247034 55.2286154,48.9391485 56.968414,51.3741978 C58.3611446,54.1574389 59.5781143,56.9417945 60.9708449,59.7261412 C61.1443766,59.5514948 61.3179175,59.3779585 61.3179175,59.3779585 C63.7551915,57.6370498 64.9721657,54.8538087 64.9721657,50.6789426 C63.9276177,49.4608583 63.7540769,48.2427786 62.8841798,47.0246944 C61.8407374,45.283782 59.5781052,44.414995 58.1864892,43.0222644 L58.1864892,43.0222644 L58.1864892,43.0222644 Z" />
+                        </svg>
+                        <p>MySQL</p>
                     </div>
-                    <div id="skillsText">
-                        <i class="fa-brands fa-python"></i>
-                        <ul>
-                            <li>Python</li>
-                        </ul>
+                    <div class="skillType">
+                        <svg id="pythonIcon" viewBox="0 0 256.00 256.00" version="1.1"
+                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                            preserveAspectRatio="xMidYMid">
+                            <path
+                                d="M126.915866,0.0722755491 C62.0835831,0.0722801733 66.1321288,28.1874648 66.1321288,28.1874648 L66.2044043,57.3145115 L128.072276,57.3145115 L128.072276,66.0598532 L41.6307171,66.0598532 C41.6307171,66.0598532 0.144551098,61.3549438 0.144551098,126.771315 C0.144546474,192.187673 36.3546019,189.867871 36.3546019,189.867871 L57.9649915,189.867871 L57.9649915,159.51214 C57.9649915,159.51214 56.8001363,123.302089 93.5968379,123.302089 L154.95878,123.302089 C154.95878,123.302089 189.434218,123.859386 189.434218,89.9830604 L189.434218,33.9695088 C189.434218,33.9695041 194.668541,0.0722755491 126.915866,0.0722755491 L126.915866,0.0722755491 L126.915866,0.0722755491 Z M92.8018069,19.6589497 C98.9572068,19.6589452 103.932242,24.6339846 103.932242,30.7893845 C103.932246,36.9447844 98.9572068,41.9198193 92.8018069,41.9198193 C86.646407,41.9198239 81.6713721,36.9447844 81.6713721,30.7893845 C81.6713674,24.6339846 86.646407,19.6589497 92.8018069,19.6589497 L92.8018069,19.6589497 L92.8018069,19.6589497 Z"
+                                fill="url(#linearGradient-1)" />
+                            <path
+                                d="M128.757101,254.126271 C193.589403,254.126271 189.540839,226.011081 189.540839,226.011081 L189.468564,196.884035 L127.600692,196.884035 L127.600692,188.138693 L214.042251,188.138693 C214.042251,188.138693 255.528417,192.843589 255.528417,127.427208 C255.52844,62.0108566 219.318366,64.3306589 219.318366,64.3306589 L197.707976,64.3306589 L197.707976,94.6863832 C197.707976,94.6863832 198.87285,130.896434 162.07613,130.896434 L100.714182,130.896434 C100.714182,130.896434 66.238745,130.339138 66.238745,164.215486 L66.238745,220.229038 C66.238745,220.229038 61.0044225,254.126271 128.757101,254.126271 L128.757101,254.126271 L128.757101,254.126271 Z M162.87116,234.539597 C156.715759,234.539597 151.740726,229.564564 151.740726,223.409162 C151.740726,217.253759 156.715759,212.278727 162.87116,212.278727 C169.026563,212.278727 174.001595,217.253759 174.001595,223.409162 C174.001618,229.564564 169.026563,234.539597 162.87116,234.539597 L162.87116,234.539597 L162.87116,234.539597 Z"
+                                fill="url(#linearGradient-2)" />
+                            <defs>
+                                <linearGradient x1="12.9593594%" y1="12.0393928%" x2="79.6388325%" y2="78.2008538%"
+                                    id="linearGradient-1">
+                                    <stop stop-color="#3675a9" offset="0%"> </stop>
+                                    <stop stop-color="#3675a9" offset="100%"> </stop>
+                                </linearGradient>
+                                <linearGradient x1="19.127525%" y1="20.5791813%" x2="90.7415328%" y2="88.4290372%"
+                                    id="linearGradient-2">
+                                    <stop stop-color="#ffcf44" offset="0%"> </stop>
+                                    <stop stop-color="#ffcf44" offset="100%"> </stop>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                        <p>Python</p>
                     </div>
-                    <div id="skillsText">
-                        <i class="fa-brands fa-wordpress-simple"></i>
-                        <ul>
-                            <li>WordPress</li>
-                        </ul>
+                    <div class="skillType">
+                        <svg id="wpIcon" viewBox="0 0 122.52 122.523" xmlns="http://www.w3.org/2000/svg">
+                            <g class="bg">
+                                <circle r="59" cx="61" cy="61" />
+                            </g>
+                            <g class="outline">
+                                <path
+                                    d="m8.708 61.26c0 20.802 12.089 38.779 29.619 47.298l-25.069-68.686c-2.916 6.536-4.55 13.769-4.55 21.388z" />
+                                <path
+                                    d="m96.74 58.608c0-6.495-2.333-10.993-4.334-14.494-2.664-4.329-5.161-7.995-5.161-12.324 0-4.831 3.664-9.328 8.825-9.328.233 0 .454.029.681.042-9.35-8.566-21.807-13.796-35.489-13.796-18.36 0-34.513 9.42-43.91 23.688 1.233.037 2.395.063 3.382.063 5.497 0 14.006-.667 14.006-.667 2.833-.167 3.167 3.994.337 4.329 0 0-2.847.335-6.015.501l19.138 56.925 11.501-34.493-8.188-22.434c-2.83-.166-5.511-.501-5.511-.501-2.832-.166-2.5-4.496.332-4.329 0 0 8.679.667 13.843.667 5.496 0 14.006-.667 14.006-.667 2.835-.167 3.168 3.994.337 4.329 0 0-2.853.335-6.015.501l18.992 56.494 5.242-17.517c2.272-7.269 4.001-12.49 4.001-16.989z" />
+                                <path
+                                    d="m62.184 65.857-15.768 45.819c4.708 1.384 9.687 2.141 14.846 2.141 6.12 0 11.989-1.058 17.452-2.979-.141-.225-.269-.464-.374-.724z" />
+                                <path
+                                    d="m107.376 36.046c.226 1.674.354 3.471.354 5.404 0 5.333-.996 11.328-3.996 18.824l-16.053 46.413c15.624-9.111 26.133-26.038 26.133-45.426.001-9.137-2.333-17.729-6.438-25.215z" />
+                                <path
+                                    d="m61.262 0c-33.779 0-61.262 27.481-61.262 61.26 0 33.783 27.483 61.263 61.262 61.263 33.778 0 61.265-27.48 61.265-61.263-.001-33.779-27.487-61.26-61.265-61.26zm0 119.715c-32.23 0-58.453-26.223-58.453-58.455 0-32.23 26.222-58.451 58.453-58.451 32.229 0 58.45 26.221 58.45 58.451 0 32.232-26.221 58.455-58.45 58.455z" />
+                            </g>
+                        </svg>
+                        <p>WordPress</p>
                     </div>
                 </div>
             </div>
             <div id="creativeSkills">
                 <h3>Creative skills</h3>
-                <div id="skillsContent">
-                    <div id="skillsText">
-                        <i class="fa-solid fa-camera"></i>
-                        <ul>
-                            <li>Adobe Photoshop</li>
-                        </ul>
+                <div class="content">
+                    <div class="skillType">
+                        <svg id="psIcon" viewBox="0 0 240 234" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid">
+
+                            <path class="st0" d="M42.5,0h155C221,0,240,19,240,42.5v149c0,23.5-19,42.5-42.5,42.5h-155C19,234,0,215,0,191.5v-149
+					C0,19,19,0,42.5,0z" />
+                            <path class="st1" d="M54,164.1V61.2c0-0.7,0.3-1.1,1-1.1c1.7,0,3.3,0,5.6-0.1c2.4-0.1,4.9-0.1,7.6-0.2c2.7-0.1,5.6-0.1,8.7-0.2
+				c3.1-0.1,6.1-0.1,9.1-0.1c8.2,0,15,1,20.6,3.1c5,1.7,9.6,4.5,13.4,8.2c3.2,3.2,5.7,7.1,7.3,11.4c1.5,4.2,2.3,8.5,2.3,13
+				c0,8.6-2,15.7-6,21.3c-4,5.6-9.6,9.8-16.1,12.2c-6.8,2.5-14.3,3.4-22.5,3.4c-2.4,0-4,0-5-0.1c-1-0.1-2.4-0.1-4.3-0.1v32.1
+				c0.1,0.7-0.4,1.3-1.1,1.4c-0.1,0-0.2,0-0.4,0H55.2C54.4,165.4,54,165,54,164.1z M75.8,79.4V113c1.4,0.1,2.7,0.2,3.9,0.2H85
+				c3.9,0,7.8-0.6,11.5-1.8c3.2-0.9,6-2.8,8.2-5.3c2.1-2.5,3.1-5.9,3.1-10.3c0.1-3.1-0.7-6.2-2.3-8.9c-1.7-2.6-4.1-4.6-7-5.7
+				c-3.7-1.5-7.7-2.1-11.8-2c-2.6,0-4.9,0-6.8,0.1C77.9,79.2,76.5,79.3,75.8,79.4L75.8,79.4z" />
+                            <path class="st1" d="M192,106.9c-3-1.6-6.2-2.7-9.6-3.4c-3.7-0.8-7.4-1.3-11.2-1.3c-2-0.1-4.1,0.2-6,0.7c-1.3,0.3-2.4,1-3.1,2
+				c-0.5,0.8-0.8,1.8-0.8,2.7c0,0.9,0.4,1.8,1,2.6c0.9,1.1,2.1,2,3.4,2.7c2.3,1.2,4.7,2.3,7.1,3.3c5.4,1.8,10.6,4.3,15.4,7.3
+				c3.3,2.1,6,4.9,7.9,8.3c1.6,3.2,2.4,6.7,2.3,10.3c0.1,4.7-1.3,9.4-3.9,13.3c-2.8,4-6.7,7.1-11.2,8.9c-4.9,2.1-10.9,3.2-18.1,3.2
+				c-4.6,0-9.1-0.4-13.6-1.3c-3.5-0.6-7-1.7-10.2-3.2c-0.7-0.4-1.2-1.1-1.1-1.9v-17.4c0-0.3,0.1-0.7,0.4-0.9
+				c0.3-0.2,0.6-0.1,0.9,0.1c3.9,2.3,8,3.9,12.4,4.9c3.8,1,7.8,1.5,11.8,1.5c3.8,0,6.5-0.5,8.3-1.4c1.6-0.7,2.7-2.4,2.7-4.2
+				c0-1.4-0.8-2.7-2.4-4c-1.6-1.3-4.9-2.8-9.8-4.7c-5.1-1.8-9.8-4.2-14.2-7.2c-3.1-2.2-5.7-5.1-7.6-8.5c-1.6-3.2-2.4-6.7-2.3-10.2
+				c0-4.3,1.2-8.4,3.4-12.1c2.5-4,6.2-7.2,10.5-9.2c4.7-2.4,10.6-3.5,17.7-3.5c4.1,0,8.3,0.3,12.4,0.9c3,0.4,5.9,1.2,8.6,2.3
+				c0.4,0.1,0.8,0.5,1,0.9c0.1,0.4,0.2,0.8,0.2,1.2v16.3c0,0.4-0.2,0.8-0.5,1C192.9,107.1,192.4,107.1,192,106.9z" />
+                            <g class="outline">
+                                <rect x="6" y="6" width="228" height="222" rx="36" />
+                            </g>
+                        </svg>
+                        <p>Adobe<br>Photoshop</p>
                     </div>
-                    <div id="skillsText">
-                        <i class="fa-solid fa-video"></i>
-                        <ul>
-                            <li>Adobe Premiere Pro</li>
-                            <li>Microsoft Clipchamp</li>
-                            <li>Camtasia</li>
-                        </ul>
+                    <div class="skillType">
+                        <svg id="prIcon" viewBox="0 0 240 234" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid">
+                            <path class="st0"
+                                d="M42.5,0h155C221,0,240,19,240,42.5v149c0,23.5-19,42.5-42.5,42.5h-155C19,234,0,215,0,191.5v-149      C0,19,19,0,42.5,0z" />
+                            <path class="st1"
+                                d="m57 164v-103c0-0.7 0.3-1.1 1-1.1 1.7 0 3.3 0 5.6-0.1 2.4-0.1 4.9-0.1 7.6-0.2s5.6-0.1 8.7-0.2 6.1-0.1 9.1-0.1c8.2 0 15 1 20.6 3.1 5 1.7 9.6 4.5 13.4 8.2 3.2 3.2 5.7 7.1 7.3 11.4 1.5 4.2 2.3 8.5 2.3 13 0 8.6-2 15.7-6 21.3s-9.6 9.8-16.1 12.2c-6.8 2.5-14.3 3.4-22.5 3.4-2.4 0-4 0-5-0.1s-2.4-0.1-4.3-0.1v32.1c0.1 0.7-0.4 1.3-1.1 1.4h-0.4-19c-0.8 0-1.2-0.4-1.2-1.3zm21.8-84.7v33.6c1.4 0.1 2.7 0.2 3.9 0.2h5.3c3.9 0 7.8-0.6 11.5-1.8 3.2-0.9 6-2.8 8.2-5.3 2.1-2.5 3.1-5.9 3.1-10.3 0.1-3.1-0.7-6.2-2.3-8.9-1.7-2.6-4.1-4.6-7-5.7-3.7-1.5-7.7-2.1-11.8-2-2.6 0-4.9 0-6.8 0.1-2-0.1-3.4 0-4.1 0.1z" />
+                            <path class="st1"
+                                d="m147 85.2h17.5c1 0 1.8 0.7 2.1 1.6 0.3 0.8 0.5 1.6 0.6 2.5 0.2 1 0.4 2.1 0.5 3.1 0.1 1.1 0.2 2.3 0.2 3.6 3-3.5 6.6-6.4 10.7-8.6 4.6-2.6 9.9-3.9 15.2-3.9 0.7-0.1 1.3 0.4 1.4 1.1v0.4 19.5c0 0.8-0.5 1.1-1.6 1.1-3.6-0.1-7.3 0.2-10.8 1-2.9 0.6-5.7 1.5-8.4 2.7-1.9 0.9-3.7 2.1-5.1 3.7v51c0 1-0.4 1.4-1.3 1.4h-19.7c-0.8 0.1-1.5-0.4-1.6-1.2v-0.4-55.4c0-2.4 0-4.9-0.1-7.5s-0.1-5.2-0.2-7.8c0-2.3-0.2-4.5-0.4-6.8-0.1-0.5 0.2-1 0.7-1.1 0-0.1 0.2-0.1 0.3 0z" />
+                            <g class="outline">
+                                <rect x="6" y="6" width="228" height="222" rx="36" />
+                            </g>
+                        </svg>
+                        <p>Adobe<br>Premiere&nbsp;Pro</p>
                     </div>
-                    <div id="skillsText">
-                        <i class="fa-solid fa-paintbrush"></i>
-                        <ul>
-                            <li>Adobe Illustrator</li>
-                        </ul>
+                    <div class="skillType">
+                        <svg id="aiIcon" viewBox="0 0 240 234" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid">
+                            <path class="st0"
+                                d="M42.5 0h155C221 0 240 19 240 42.5v149c0 23.5-19 42.5-42.5 42.5h-155C19 234 0 215 0 191.5v-149C0 19 19 0 42.5 0z" />
+                            <path class="st1"
+                                d="M116 140H78.8l-7.6 23.5c-.2.9-1 1.5-1.9 1.4H50.5c-1.1 0-1.4-.6-1.1-1.8l32.2-92.7c.3-1 .6-2.1 1-3.3.4-2.1.6-4.3.6-6.5-.1-.5.3-1 .8-1.1h25.9c.8 0 1.2.3 1.3.8l36.5 103c.3 1.1 0 1.6-1 1.6h-20.9c-.7.1-1.4-.4-1.6-1.1L116 140zm-31.4-20.3H110c-.6-2.1-1.4-4.6-2.3-7.2-.9-2.7-1.8-5.6-2.7-8.6-1-3.1-1.9-6.1-2.9-9.2s-1.9-6-2.7-8.9c-.8-2.8-1.5-5.4-2.2-7.8H97c-.9 4.3-2 8.6-3.4 12.9-1.5 4.8-3 9.8-4.6 14.8-1.4 5.1-2.9 9.8-4.4 14zM170 77c-3.3.1-6.5-1.2-8.9-3.5-2.3-2.5-3.5-5.8-3.4-9.2-.1-3.4 1.2-6.6 3.6-8.9s5.6-3.5 8.9-3.5c3.9 0 6.9 1.2 9.1 3.5 2.2 2.4 3.4 5.6 3.3 8.9.1 3.4-1.1 6.7-3.5 9.2-2.3 2.4-5.7 3.7-9.1 3.5zm-11.2 86.8v-77c0-1 .4-1.4 1.3-1.4h19.8c.9 0 1.3.5 1.3 1.4v77c0 1.1-.4 1.6-1.3 1.6h-19.6c-1 0-1.5-.6-1.5-1.6z" />
+                            <g class="outline">
+                                <rect x="6" y="6" width="228" height="222" rx="36" />
+                            </g>
+                        </svg>
+                        <p>Adobe<br>Illustrator</p>
+                    </div>
+                    <div class="skillType">
+                        <svg id="ccIcon" viewBox="0 0 276.04562 275.01563" version="1.1"
+                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                            xmlns:svg="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid">
+                            <g transform="translate(-361.40429,-86.326265)">
+                                <path class="open" style="fill:url(#linearGradient31225)"
+                                    d="M 376.57133,136.95923 593.72994,86.832757 c 10.49582,-2.422737 20.89595,4.076528 23.31869,14.572343 l 5.82309,25.22688 c 2.42274,10.49582 -4.07653,20.89595 -14.57234,23.31869 l -217.15861,50.12647 c -10.49581,2.42274 -20.82257,-4.09374 -23.31868,-14.57234 l -5.85771,-24.59045 c -2.59809,-10.90633 4.11114,-21.53238 14.60695,-23.95512 z" />
+                                <g transform="matrix(1.9246224,0,0,1.9246224,-334.16252,-79.8192)">
+                                    <path class="top-1" style="fill:url(#linearGradient32130)"
+                                        d="m 361.4043,122.62813 v 31.31902 c 0,5.71484 4.60082,10.31565 10.31565,10.31565 h 133.11281 v -18.91926 -1.89808 c 0,-5.58741 -4.3202,-10.12786 -9.81594,-10.47895 v -0.0227 H 371.71995 c -5.71483,0 -10.31565,-4.60082 -10.31565,-10.31565 z" />
+                                    <path class="top-2" style="fill:url(#linearGradient33380)"
+                                        d="m 455.69002,132.94378 v 31.31902 h 49.14274 v -18.91926 -1.89808 c 0,-5.5874 -4.32021,-10.12786 -9.81594,-10.47895 v -0.0227 z" />
+                                    <path class="mid-1" style="fill:url(#linearGradient36570)"
+                                        d="m 361.4043,153.94715 v 33.79638 c 0,3.05677 1.31683,5.7939 3.41581,7.67964 H 504.83276 V 164.2628 H 371.71995 c -5.71484,0 -10.31565,-4.60081 -10.31565,-10.31565 z" />
+                                    <path class="mid-2" style="fill:url(#linearGradient34216)"
+                                        d="m 361.4043,153.94715 v 33.79638 c 0,3.05677 1.31684,5.7939 3.41581,7.67964 H 410.6323 V 164.2628 h -38.91235 c -5.71483,0 -10.31565,-4.60082 -10.31565,-10.31565 z" />
+                                    <path class="bottom" style="fill:url(#linearGradient37613)"
+                                        d="m 361.4043,185.10752 v 33.79638 c 0,5.71486 4.6008,10.31565 10.31565,10.31565 h 122.79716 c 5.71485,0 10.31565,-4.60079 10.31565,-10.31565 V 195.42317 H 371.71995 c -5.71485,0 -10.31565,-4.6008 -10.31565,-10.31565 z" />
+                                </g>
+                            </g>
+                            <defs>
+                                <linearGradient id="linearGradient37611">
+                                    <stop style="stop-color:#8362f6;stop-opacity:1;" offset="0" id="stop37607" />
+                                    <stop style="stop-color:#4f37f3;stop-opacity:1;" offset="1" id="stop37609" />
+                                </linearGradient>
+                                <linearGradient id="linearGradient36568">
+                                    <stop style="stop-color:#a367f6;stop-opacity:1;" offset="0" id="stop36564" />
+                                    <stop style="stop-color:#814df3;stop-opacity:1;" offset="1" id="stop36566" />
+                                </linearGradient>
+                                <linearGradient id="linearGradient34214">
+                                    <stop style="stop-color:#d891f9;stop-opacity:1;" offset="0" id="stop34210" />
+                                    <stop style="stop-color:#c681f8;stop-opacity:1;" offset="1" id="stop34212" />
+                                </linearGradient>
+                                <linearGradient id="linearGradient33378">
+                                    <stop style="stop-color:#bb77f6;stop-opacity:1;" offset="0" id="stop33374" />
+                                    <stop style="stop-color:#a865f4;stop-opacity:1;" offset="1" id="stop33376" />
+                                </linearGradient>
+                                <linearGradient id="linearGradient32128">
+                                    <stop style="stop-color:#e9a8f7;stop-opacity:1;" offset="0" id="stop32124" />
+                                    <stop style="stop-color:#d38ef7;stop-opacity:1;" offset="1" id="stop32126" />
+                                </linearGradient>
+                                <linearGradient id="linearGradient31223">
+                                    <stop style="stop-color:#7250db;stop-opacity:1;" offset="0" id="stop31219" />
+                                    <stop style="stop-color:#a357db;stop-opacity:1;" offset="1" id="stop31221" />
+                                </linearGradient>
+                                <linearGradient xlink:href="#linearGradient31223" id="linearGradient31225"
+                                    x1="363.33548" y1="211.98798" x2="461.39578" y2="210.61124"
+                                    gradientUnits="userSpaceOnUse"
+                                    gradientTransform="matrix(1.8753106,-0.43287583,0.43287583,1.8753106,-334.16252,-79.8192)" />
+                                <linearGradient xlink:href="#linearGradient32128" id="linearGradient32130"
+                                    x1="384.91492" y1="144.6554" x2="454.75183" y2="163.36813"
+                                    gradientUnits="userSpaceOnUse" />
+                                <linearGradient xlink:href="#linearGradient33378" id="linearGradient33380" x1="461.9863"
+                                    y1="143.00386" x2="501.31244" y2="153.54128" gradientUnits="userSpaceOnUse" />
+                                <linearGradient xlink:href="#linearGradient34214" id="linearGradient34216"
+                                    x1="373.62949" y1="178.51173" x2="404.18277" y2="178.51173"
+                                    gradientUnits="userSpaceOnUse" />
+                                <linearGradient xlink:href="#linearGradient36568" id="linearGradient36570"
+                                    x1="416.56924" y1="178.78699" x2="508.50436" y2="178.78699"
+                                    gradientUnits="userSpaceOnUse" />
+                                <linearGradient xlink:href="#linearGradient37611" id="linearGradient37613"
+                                    x1="369.77591" y1="211.54233" x2="480.97888" y2="211.54233"
+                                    gradientUnits="userSpaceOnUse" />
+                            </defs>
+                        </svg>
+                        <p>Clipchamp</p>
                     </div>
                 </div>
             </div>
         </section>
         <!-- Projects -->
         <section id="projects">
-            <div id="corners" class="projects">
+            <div id="corners">
                 <h1>Projects</h1>
-                <div id="projectsContent">
-                    <div id="projectsText">
-                        <a href="" target="_blank">
-                            <img class="projectsImages" src="Images/Pictures/weather_app.png"
-                                alt="screenshot_of_weather_app" />
-                            <div class="linkText">
-                                <div>
-                                    Click to open in new tab
-                                </div>
+                <div class="content">
+                    <div class="projectType">
+                        <a href="/links/weatherApp/index.html" target="_blank">
+                            <img src="/gifs/weatherApp.gif" alt="screenshot_of_weather_app" />
+                            <div class="overlay">
+                                Click to open in new tab
                             </div>
                         </a>
                         <p>
-                            A simplistic location-based weather app providing the user location, temperature, weather
-                            description, and sunrise and sunset times.
+                            Location-based weather app in a minimalist style.
                             <br>
                             <br>
-                            Created using <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong>
+                            Created using <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong>.
                         </p>
-                        <a href="" target="_blank">
-                            <img class="projectsImages" src="Images/Pictures/films_database.png"
-                                alt="screenshot_of_weather_app" />
-                            <div class="linkText">
+                    </div>
+                    <div class="projectType">
+                        <a href="https://replit.com/@aenrua/filmsDatabaseApp" target="_blank">
+                            <img src="Gifs/filmsApp.gif" alt="screenshot_of_films_app" />
+                            <div class="overlay">
                                 Click to view in replit
                             </div>
                         </a>
                         <p>
-                            [Films database]
+                            Command line app that allows database management of film records and report generation.
                             <br>
                             <br>
-                            Created using <strong>SQLite</strong>, <strong>Python</strong>
+                            Created using <strong>SQLite</strong>, <strong>Python</strong>.
                         </p>
-                        <a href="" target="_blank">
-                            <img class="projectsImages" src="Images/Pictures/planetary_orbits.png"
-                                alt="screenshot_of_weather_app" />
-                            <div class="linkText">
+                    </div>
+                    <div class="projectType">
+                        <a href="https://replit.com/@aenrua/planetaryOrbitsSimulation" target="_blank">
+                            <img src="Gifs/planetaryOrbitsSim.gif" alt="gif_of_simulation" />
+                            <div class="overlay">
                                 <div>
                                     Click to view in replit
                                 </div>
                             </div>
                         </a>
                         <p>
-                            [Solar system simulation]
+                            Simulation of planetary orbits around the Sun, with a pyplot graph output.
                             <br>
                             <br>
-                            Created using <strong>Python</strong> with <strong>Turtle</strong> and
-                            <strong>Matplotlib</strong>
+                            Created using <strong>Python</strong> with <strong>Math</strong>, <strong>Turtle</strong>
+                            and
+                            <strong>Matplotlib</strong>.
                         </p>
                     </div>
                 </div>
                 <!-- Corners -->
-                <div id="top-left" class="borderCorner"></div>
-                <div id="top-right" class="borderCorner"></div>
-                <div id="bottom-right" class="borderCorner"></div>
-                <div id="bottom-left" class="borderCorner"></div>
+                <div class="top-left"></div>
+                <div class="bottom-right"></div>
             </div>
         </section>
         <!-- Contact -->
-        <footer id="contact">
+        <section id="contact">
             <h1>Contact</h1>
-            <div id="contactText">
-                <div id="contactContent">
-                    <p>
-                        Feel free to get in touch: <a href="mailto:aenrua@gmail.com"
-                            class="emailLink"><strong>aenrua@gmail.com</strong></a>
-                    </p>
-                </div>
-                <a href="Links\CV\Anton Agejev CV.pdf" target="_blank" class="btn">
+            <div class="content">
+                <p>
+                    Feel&nbsp;free&nbsp;to&nbsp;get&nbsp;in&nbsp;touch: <a href="mailto:aenrua@gmail.com"
+                        class="emailLink"><strong>aenrua@gmail.com</strong></a>
+                </p>
+                <a href="links\cv\Anton Agejev CV.pdf" target="_blank" class="btn">
                     View my CV
                 </a>
             </div>
-        </footer>
+        </section>
     </main>
 </body>
 
