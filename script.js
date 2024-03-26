@@ -325,7 +325,7 @@ window.addEventListener(`scroll`, function () {
     aboutImg.style.transform = `translateX(25%)`;
     aboutImg.style.opacity = `0`;
 
-    if (inView(aboutImg)) {
+    if (inView(aboutTitle)) {
         aboutTitle.style.animation = `about-slide 0.5s ease-out forwards`;
         aboutContent.forEach(p => {
             p.style.animation = `about-slide 0.5s ease-out forwards`;
