@@ -82,11 +82,11 @@ mobMenu.addEventListener(`click`, () => {
     if (navLinks.style.transform === `translateX(-100%)`) {
         navLinks.style.transform = `translateX(0)`;
         navLinks.style.transition = `transform 0.5s ease`;
-        body.style.overflow = `hidden`;
+        body.style.overflowY = `hidden`;
     }
     else {
         linkClick();
-        body.style.overflow = ``;
+        body.style.overflowY = ``;
     }
 });
 
@@ -148,7 +148,7 @@ const introLinks = document.querySelector(`#intro .links`)
 
 function defaultStyling() {
     lines.forEach(line => {
-        line.style.overflow = `visible`;
+        line.style.overflowY = `visible`;
         line.style.width = `auto`;
         line.style.textAlign = ``;
         line.style.whiteSpace = ``;
@@ -160,7 +160,7 @@ function defaultStyling() {
     introLinks.style.opacity = ``;
     introLinks.style.visibility = ``;
     introLinks.style.animation = ``;
-    body.style.overflow = ``;
+    body.style.overflowY = ``;
 }
 
 function line1Animation() {
@@ -221,10 +221,10 @@ function introLinksAnimation() {
         introLinks.style.opacity = `0`;
         introLinks.style.visibility = `hidden`;
         introLinks.style.animation = `slide-fade 0.5s 5.9s ease-out forwards`;
-        body.style.overflow = `hidden`;
+        body.style.overflowY = `hidden`;
         body.style.paddingRight = `${scrollbarWidth}px`;
         setTimeout(() => {
-            body.style.overflow = ``;
+            body.style.overflowY = ``;
             body.style.paddingRight = ``;
         }, 6400);
     }
