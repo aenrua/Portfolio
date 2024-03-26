@@ -311,28 +311,37 @@ window.addEventListener(`scroll`, function () {
 });
 
 // !Section fade
-// window.addEventListener(`scroll`, function () {
-//     const aboutTitle = document.querySelector(`#about h1`);
-//     const aboutContent = document.querySelectorAll(`#about .content p`);
-//     const aboutImg = document.querySelector(`#about .content img`);
+function inViewAbout(element) {
+    const bound = element.getBoundingClientRect();
 
-//     aboutTitle.style.transform = `translateX(-10%)`;
-//     aboutTitle.style.opacity = `0`;
-//     aboutContent.forEach(p => {
-//         p.style.transform = `translateX(-15%)`;
-//         p.style.opacity = `0`;
-//     });
-//     aboutImg.style.transform = `translateX(25%)`;
-//     aboutImg.style.opacity = `0`;
+    return (
+        bound.top >= 0 &&
+        bound.bottom <= (window.innerHeight || document.documentElement.clientHeight)
+    );
+}
 
-//     if (inView(aboutTitle)) {
-//         aboutTitle.style.animation = `about-slide 0.5s ease-out forwards`;
-//         aboutContent.forEach(p => {
-//             p.style.animation = `about-slide 0.5s ease-out forwards`;
-//         });
-//         aboutImg.style.animation = `about-slide 0.5s ease-out forwards`;
-//     }
-// });
+window.addEventListener(`scroll`, function () {
+    const aboutTitle = document.querySelector(`#about h1`);
+    const aboutContent = document.querySelectorAll(`#about .content p`);
+    const aboutImg = document.querySelector(`#about .content img`);
+
+    aboutTitle.style.transform = `translateX(-10%)`;
+    aboutTitle.style.opacity = `0`;
+    aboutContent.forEach(p => {
+        p.style.transform = `translateX(-15%)`;
+        p.style.opacity = `0`;
+    });
+    aboutImg.style.transform = `translateX(25%)`;
+    aboutImg.style.opacity = `0`;
+
+    if (inViewAbout(aboutImg)) {
+        aboutTitle.style.animation = `about-slide 0.5s ease-out forwards`;
+        aboutContent.forEach(p => {
+            p.style.animation = `about-slide 0.5s ease-out forwards`;
+        });
+        aboutImg.style.animation = `about-slide 0.5s ease-out forwards`;
+    }
+});
 
 window.addEventListener(`scroll`, function () {
     const techSkillsSection = document.querySelector(`#technicalSkills`);
@@ -384,6 +393,15 @@ window.addEventListener(`scroll`, function () {
     }
 });
 
+function inViewProjects(element) {
+    const bound = element.getBoundingClientRect();
+
+    return (
+        bound.top >= 0 &&
+        bound.bottom <= (window.innerHeight || document.documentElement.clientHeight)
+    );
+}
+
 window.addEventListener(`scroll`, function () {
     const projectsTitle = document.querySelector(`#projects h1`);
     const projectsContent = document.querySelectorAll(`#projects .content p`);
@@ -402,11 +420,11 @@ window.addEventListener(`scroll`, function () {
         Gif.style.opacity = `0`;
         Gif.style.visibility = `hidden`;
 
-        if (index === 0 && inView(Gif)) {
+        if (index === 0 && inViewProjects(Gif)) {
             projectsTitle.style.animation = `projects-slide 0.5s ease-out forwards`;
         }
 
-        if (inView(Gif)) {
+        if (inViewProjects(Gif)) {
             Content.style.animation = `projects-slide 0.5s ease-out forwards`;
             Gif.style.animation = `projects-slide 0.5s ease-out forwards`;
             Gif.style.visibility = `visible`
