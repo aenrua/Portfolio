@@ -484,6 +484,28 @@ nav {
     fill: var(--primary-colour);
 }
 
+#bsIcon {
+    .st0 {
+        fill: #7952b3;
+    }
+
+    .st1 {
+        fill: #ffffff;
+        stroke: #ffffff
+    }
+}
+
+#bsIcon:not(:hover) {
+    .st0 {
+        fill: var(--primary-colour);
+    }
+
+    .st1 {
+        fill: var(--bg-colour);
+        stroke: var(--bg-colour)
+    }
+}
+
 #mysqlIcon {
     rect {
         fill: #00758f;
@@ -664,23 +686,39 @@ nav {
     }
 }
 
+@media (max-width: 1440px) {
+    #skills {
+        margin-left: 10rem;
+        margin-right: 10rem;
+    }
+}
+
 @media (max-width: 1024px) {
     #skills {
-        margin: 10rem 5rem 0;
+        margin-left: 8.5rem;
+        margin-right: 8.5rem;
     }
 
     #skills .content {
         gap: 1rem 2rem;
     }
 
-    #skills svg {
+    #skills .content .skillType svg {
         width: 80%;
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 900px) {
     #skills {
-        margin: 10rem 2rem 0;
+        margin-left: 5rem;
+        margin-right: 5rem;
+    }
+}
+
+@media (max-width: 655px) {
+    #skills {
+        margin-left: 2.5rem;
+        margin-right: 2.5rem;
     }
 }
 
