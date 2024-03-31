@@ -1,13 +1,15 @@
-// !Navigation bar
+// !Navigation
 const body = document.body;
 const navBar = document.getElementById(`navBar`);
 const logo = document.getElementById(`logo`);
 const navLinks = document.getElementById(`navLinks`);
 const mobMenu = document.getElementById(`mobMenu`);
+const mobClose = document.querySelector(`.mobClose`)
+const jumpBtn = document.getElementById(`jumpBtn`)
 let links;
 
 function navBarShow() {
-    navBar.style.transform = `translateY(-100%)`;
+    navBar.style.transform = `translateY(-101%)`;
     if (window.innerWidth >= 384) {
         setTimeout(() => {
             navBar.style.transform = `translateY(0)`;
@@ -30,11 +32,10 @@ function mobNav() {
         logo.style.marginLeft = `1.75rem`;
         mobMenu.style.marginRight = `1.75rem`;
 
-        navBar.insertAdjacentElement(`afterend`, navLinks);
-        const remainingHeight = window.innerHeight - navBar.offsetHeight;
+        navBar.insertAdjacentElement(`beforebegin`, navLinks);
 
-        navLinks.style.height = `${remainingHeight}px`;
         navLinks.style.width = `100vw`;
+        navLinks.style.height = `100vh`;
         navLinks.style.justifyContent = `center`;
         navLinks.style.flexDirection = `column`;
         navLinks.style.gap = `1.75rem 0`
@@ -43,6 +44,8 @@ function mobNav() {
         navLinks.style.transform = `translateX(-100%)`;
         navLinks.style.position = `fixed`;
         navLinks.style.fontSize = `1.5em`;
+        navLinks.style.zIndex = `2`;
+        mobClose.style.display = `block`;
 
         links = navLinks.querySelectorAll(`a`);
         links.forEach(link => {
@@ -56,8 +59,8 @@ function mobNav() {
         mobMenu.style.marginRight = ``;
 
         navBar.insertBefore(navLinks, mobMenu);
-        navLinks.style.height = ``;
         navLinks.style.width = ``;
+        navLinks.style.height = ``;
         navLinks.style.justifyContent = ``;
         navLinks.style.flexDirection = ``;
         navLinks.style.gap = ``;
@@ -66,6 +69,8 @@ function mobNav() {
         navLinks.style.transform = ``;
         navLinks.style.position = ``;
         navLinks.style.fontSize = ``;
+        navLinks.style.zIndex = ``;
+        mobClose.style.display = ``;
 
         if (links) {
             links.forEach(link => {
@@ -95,11 +100,24 @@ function linkClick() {
     body.style.overflow = ``;
 }
 
-logo.addEventListener(`click`, () => {
-    if (window.innerWidth <= 600) {
-        linkClick();
+function scrollBtnShow() {
+    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+        jumpBtn.style.transform = `translateY(0)`
+        jumpBtn.style.opacity = `1`
+        jumpBtn.style.visibility = `visible`;
+        jumpBtn.style.transition = `all 0.15s ease`;
+    } else {
+        jumpBtn.style.transform = ``
+        jumpBtn.style.opacity = ``
+        jumpBtn.style.visibility = ``;
     }
-});
+}
+window.onscroll = function () { scrollBtnShow() };
+
+function scrollToTop() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
 
 // !Section jump
 function sectionJump() {
@@ -113,12 +131,12 @@ function sectionJump() {
             if (section && navBar && sectionId !== `about`) {
                 const navBarHeight = navBar.getBoundingClientRect().bottom;
                 const sectionMarginTop = parseInt(getComputedStyle(section).marginTop); // top margin of section as an integer, to remove characters like px
-                const scroll = section.getBoundingClientRect().top - navBarHeight - sectionMarginTop + 110 + window.scrollY;
+                const scroll = section.getBoundingClientRect().top - navBarHeight - sectionMarginTop + 117 + window.scrollY;
                 // [vertical position of top of section] - [height of navBar] - [top margin of section] + [adjusted scroll] + [number of pixels the document has already scrolled]
                 window.scrollTo({ top: scroll });
             }
             else if (sectionId === `about`) {
-                const scrollAbout = section.getBoundingClientRect().top - 143 + window.scrollY;
+                const scrollAbout = section.getBoundingClientRect().top - 133 + window.scrollY;
                 window.scrollTo({ top: scrollAbout });
 
             }

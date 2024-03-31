@@ -23,7 +23,7 @@
     <!-- Navbar -->
     <nav>
         <div id="navBar">
-            <a href="#">
+            <div>
                 <svg id="logo" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1200">
                     <polygon class="cls-1"
                         points="950.02 348.89 917.68 348.89 1023.35 81.95 1055.63 81.9 950.02 348.89" />
@@ -38,8 +38,11 @@
                     <polygon class="cls-1"
                         points="735.89 890.2 716.6 856.82 880.51 442.76 912.88 442.76 735.89 890.2" />
                 </svg>
-            </a>
+            </div>
             <div id="navLinks">
+                <a class="mobClose">
+                    <i class="fa-solid fa-xmark"></i>
+                </a>
                 <a href="#about">About</a>
                 <a href="#skills">Skills</a>
                 <a href="#projects">Projects</a>
@@ -49,6 +52,9 @@
                 <i class="fa-solid fa-bars"></i>
             </div>
         </div>
+        <button id="jumpBtn" onclick="scrollToTop()">
+            <i class="fa-solid fa-caret-up"></i>
+        </button>
     </nav>
     <!-- Main content -->
     <main>
