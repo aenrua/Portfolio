@@ -177,7 +177,7 @@ nav {
 }
 
 #jumpBtn:hover {
-    background-color: var(--tertiary-colour);
+    background-color: var(--primary-colour);
 }
 
 /* !Border corners */
