@@ -9,7 +9,7 @@ const jumpBtn = document.getElementById(`jumpBtn`)
 let links;
 
 function navBarShow() {
-    navBar.style.transform = `translateY(-101%)`;
+    navBar.style.transform = `translateY(-115%)`;
     if (window.innerWidth >= 384) {
         setTimeout(() => {
             navBar.style.transform = `translateY(0)`;
@@ -40,7 +40,7 @@ function mobNav() {
         navLinks.style.flexDirection = `column`;
         navLinks.style.gap = `1.75rem 0`
         navLinks.style.alignItems = `center`;
-        navLinks.style.backgroundColor = `var(--tertiary-colour)`;
+        navLinks.style.backgroundColor = `var(--primary-colour)`;
         navLinks.style.transform = `translateX(-100%)`;
         navLinks.style.position = `fixed`;
         navLinks.style.fontSize = `1.5em`;
@@ -100,24 +100,27 @@ function linkClick() {
     body.style.overflow = ``;
 }
 
-function scrollBtnShow() {
-    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-        jumpBtn.style.transform = `translateY(0)`
-        jumpBtn.style.opacity = `1`
-        jumpBtn.style.visibility = `visible`;
-        jumpBtn.style.transition = `all 0.15s ease`;
-    } else {
-        jumpBtn.style.transform = ``
-        jumpBtn.style.opacity = ``
-        jumpBtn.style.visibility = ``;
-    }
-}
-window.onscroll = function () { scrollBtnShow() };
-
 function scrollToTop() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
 }
+
+function scrollBtnShow() {
+    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+        jumpBtn.style.transform = `translateY(0)`;
+        jumpBtn.style.opacity = `1`;
+        jumpBtn.style.visibility = `visible`;
+        jumpBtn.style.transition = `all 0.15s ease`;
+        navBar.style.boxShadow = `0 1px 10px #000000`;
+        navBar.style.transition = `all 0.15s ease`;
+    } else {
+        jumpBtn.style.transform = ``;
+        jumpBtn.style.opacity = ``;
+        jumpBtn.style.visibility = ``;
+        navBar.style.boxShadow = `none`;
+    }
+}
+window.onscroll = function () { scrollBtnShow() };
 
 // !Section jump
 function sectionJump() {
