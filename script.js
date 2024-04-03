@@ -87,7 +87,7 @@ mobMenu.addEventListener(`click`, () => {
     body.style.overflow = `hidden`;
     if (navLinks.style.transform === `translateX(-100%)`) {
         navLinks.style.transform = `translateX(0)`;
-        navLinks.style.transition = `transform 0.5s ease`;
+        navLinks.style.transition = `transform 0.25s ease`;
     }
     else {
         linkClick();
@@ -96,7 +96,7 @@ mobMenu.addEventListener(`click`, () => {
 
 function linkClick() {
     navLinks.style.transform = `translateX(-100%)`;
-    navLinks.style.transition = `transform 0.5s ease`;
+    navLinks.style.transition = `transform 0.25s ease`;
     body.style.overflow = ``;
 }
 
