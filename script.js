@@ -243,7 +243,7 @@ function introLinksAnimation() {
 
         introLinks.style.opacity = `0`;
         introLinks.style.visibility = `hidden`;
-        introLinks.style.animation = `slide-fade 0.5s 5.9s ease-out forwards`;
+        introLinks.style.animation = `intro-slide-fade 0.5s 5.9s ease-out forwards`;
         body.style.overflow = `hidden`;
         body.style.paddingRight = `${scrollbarWidth}px`;
         setTimeout(() => {
@@ -345,21 +345,18 @@ window.addEventListener(`scroll`, function () {
     const aboutContent = document.querySelectorAll(`#about .content p`);
     const aboutImg = document.querySelector(`#about .content img`);
 
-    aboutTitle.style.transform = `translateX(-10%)`;
     aboutTitle.style.opacity = `0`;
     aboutContent.forEach(p => {
-        p.style.transform = `translateX(-15%)`;
         p.style.opacity = `0`;
     });
-    aboutImg.style.transform = `translateX(25%)`;
     aboutImg.style.opacity = `0`;
 
     if (inViewAbout(aboutImg)) {
-        aboutTitle.style.animation = `about-slide 0.5s ease-out forwards`;
+        aboutTitle.style.animation = `about-fade 0.5s ease-out forwards`;
         aboutContent.forEach(p => {
-            p.style.animation = `about-slide 0.5s ease-out forwards`;
+            p.style.animation = `about-fade 0.5s ease-out forwards`;
         });
-        aboutImg.style.animation = `about-slide 0.5s ease-out forwards`;
+        aboutImg.style.animation = `about-fade 0.5s ease-out forwards`;
     }
 });
 
@@ -371,9 +368,7 @@ window.addEventListener(`scroll`, function () {
     const artSkillsTitle = document.querySelector(`#creativeSkills h3`);
     const artSkillType = document.querySelectorAll(`#creativeSkills .skillType`);
 
-    techSkillsTitle.style.transform = `translateY(-50%)`;
     techSkillsTitle.style.opacity = `0`;
-    artSkillsTitle.style.transform = `translateY(-50%)`;
     artSkillsTitle.style.opacity = `0`;
 
     techSkillType.forEach(icon => {
@@ -387,7 +382,7 @@ window.addEventListener(`scroll`, function () {
 
     if (window.innerWidth >= 425) {
         if (inView(techSkillsSection)) {
-            techSkillsTitle.style.animation = `skills-title-slide 0.5s ease-out forwards`;
+            techSkillsTitle.style.animation = `skills-title-fade 0.5s ease-out forwards`;
             techSkillType.forEach((icon, index) => {
                 icon.style.animation = `skills-icon-pop 0.5s ease-out forwards`;
                 icon.style.animationDelay = `${index * 0.1}s`;
@@ -397,7 +392,7 @@ window.addEventListener(`scroll`, function () {
     else if (window.innerWidth <= 427) {
         const thirdSvg = document.querySelectorAll(`#technicalSkills .skillType`)[2];
         if (inView(thirdSvg)) {
-            techSkillsTitle.style.animation = `skills-title-slide 0.5s ease-out forwards`;
+            techSkillsTitle.style.animation = `skills-title-fade 0.5s ease-out forwards`;
             techSkillType.forEach((icon, index) => {
                 icon.style.animation = `skills-icon-pop 0.5s ease-out forwards`;
                 icon.style.animationDelay = `${index * 0.1}s`;
@@ -405,7 +400,7 @@ window.addEventListener(`scroll`, function () {
         }
     }
     if (inView(artSection)) {
-        artSkillsTitle.style.animation = `skills-title-slide 0.5s ease-out forwards`;
+        artSkillsTitle.style.animation = `skills-title-fade 0.5s ease-out forwards`;
         artSkillType.forEach((icon, index) => {
             icon.style.animation = `skills-icon-pop 0.5s ease-out forwards`;
             icon.style.animationDelay = `${index * 0.1}s`;
@@ -427,7 +422,6 @@ window.addEventListener(`scroll`, function () {
     const projectsContent = document.querySelectorAll(`#projects .content p`);
     const projectTypes = document.querySelectorAll(`#projects .projectType`);
 
-    projectsTitle.style.transform = `translateX(-10%)`;
     projectsTitle.style.opacity = `0`;
 
     projectTypes.forEach((Type, index) => {
@@ -441,7 +435,7 @@ window.addEventListener(`scroll`, function () {
         Gif.style.visibility = `hidden`;
 
         if (index === 0 && inViewProjects(Gif)) {
-            projectsTitle.style.animation = `projects-slide 0.5s ease-out forwards`;
+            projectsTitle.style.animation = `projects-fade 0.5s ease-out forwards`;
         }
 
         if (inViewProjects(Gif)) {
@@ -458,16 +452,13 @@ window.addEventListener(`scroll`, function () {
     const contactContent = document.querySelector(`#contact .content p`);
     const contactCV = document.querySelector(`#contact .content .btn`);
 
-    contactTitle.style.transform = `translateX(-10%)`;
     contactTitle.style.opacity = `0`;
-    contactContent.style.transform = `translateX(-15%)`;
     contactContent.style.opacity = `0`
-    contactCV.style.transform = `translateX(100%)`;
     contactCV.style.opacity = `0`
 
     if (inView(contactSection)) {
-        contactTitle.style.animation = `contact-slide 0.5s ease-out forwards`;
-        contactContent.style.animation = `contact-slide 0.5s ease-out forwards`;
-        contactCV.style.animation = `contact-slide 0.5s ease-out forwards`;
+        contactTitle.style.animation = `contact-fade 0.5s ease-out forwards`;
+        contactContent.style.animation = `contact-fade 0.5s ease-out forwards`;
+        contactCV.style.animation = `contact-fade 0.5s ease-out forwards`;
     }
 });

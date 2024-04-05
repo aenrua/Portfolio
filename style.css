@@ -313,9 +313,7 @@ nav {
     color: white;
 }
 
-@keyframes slide-fade {
-    0% {}
-
+@keyframes intro-slide-fade {
     100% {
         opacity: 1;
         visibility: visible;
@@ -336,10 +334,9 @@ nav {
     padding: 0 1.6rem 1.6rem;
 }
 
-@keyframes about-slide {
+@keyframes about-fade {
     100% {
         opacity: 1;
-        transform: translateX(0);
     }
 }
 
@@ -704,10 +701,9 @@ nav {
     }
 }
 
-@keyframes skills-title-slide {
+@keyframes skills-title-fade {
     100% {
         opacity: 1;
-        transform: translateX(0);
     }
 }
 
@@ -808,6 +804,12 @@ nav {
     max-width: calc(50% - 1.5rem);
 }
 
+@keyframes projects-fade {
+    100% {
+        opacity: 1;
+    }
+}
+
 @keyframes projects-slide {
     100% {
         opacity: 1;
@@ -899,10 +901,9 @@ nav {
     border-color: var(--secondary-colour);
 }
 
-@keyframes contact-slide {
+@keyframes contact-fade {
     100% {
         opacity: 1;
-        transform: translateX(0);
     }
 }
 
