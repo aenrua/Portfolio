@@ -201,6 +201,7 @@ function line1Animation() {
 function line1Border() {
     line1.style.borderRightColor = `transparent`;
 }
+line1.addEventListener(`animationend`, line1Border);
 
 function line2Animation() {
     if (window.innerWidth >= 384) {
@@ -219,6 +220,7 @@ function line2Animation() {
 function line2Border() {
     line2.style.borderRightColor = `transparent`;
 }
+line2.addEventListener(`animationend`, line2Border);
 
 function line3Animation() {
     if (window.innerWidth >= 384) {
@@ -247,15 +249,12 @@ function introLinksAnimation() {
         setTimeout(() => {
             body.style.overflow = ``;
             body.style.paddingRight = ``;
-        }, 6400);
+        }, 5900);
     }
     else {
         defaultStyling();
     }
 }
-
-line1.addEventListener(`animationend`, line1Border);
-line2.addEventListener(`animationend`, line2Border);
 
 window.addEventListener(`resize`, () => {
     if (window.innerWidth < 384) {
