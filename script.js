@@ -290,19 +290,9 @@ window.addEventListener(`scroll`, function () {
     if (inView(aboutImg)) {
         aboutTopLeft.forEach(corner => {
             corner.style.animation = `top-left-corner 0.5s ease-out forwards`;
-            corner.style.opacity = `1`;
         });
         aboutBottomRight.forEach(corner => {
             corner.style.animation = `bottom-right-corner 0.5s ease-out forwards`;
-            corner.style.opacity = `1`;
-        });
-    }
-    else {
-        aboutTopLeft.forEach(corner => {
-            corner.style.opacity = `0`;
-        });
-        aboutBottomRight.forEach(corner => {
-            corner.style.opacity = `0`;
         });
     }
 });
@@ -313,19 +303,9 @@ window.addEventListener(`scroll`, function () {
     if (inView(projectsGif)) {
         projectsTopLeft.forEach(corner => {
             corner.style.animation = `top-left-corner 0.5s ease-out forwards`;
-            corner.style.opacity = `1`;
         });
         projectsBottomRight.forEach(corner => {
             corner.style.animation = `bottom-right-corner 0.5s ease-out forwards`;
-            corner.style.opacity = `1`;
-        });
-    }
-    else {
-        projectsTopLeft.forEach(corner => {
-            corner.style.opacity = `0`;
-        });
-        projectsBottomRight.forEach(corner => {
-            corner.style.opacity = `0`;
         });
     }
 });
