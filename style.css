@@ -548,6 +548,38 @@ nav {
     fill: var(--primary-colour);
 }
 
+#luaIcon {
+    .blue path {
+        fill: #000080;
+    }
+
+    .white path {
+        fill: #FFFFFF;
+    }
+
+    .outline path {
+        stroke: #808080;
+    }
+}
+
+#luaIcon:not(:hover) {
+    .blue path {
+        fill: var(--primary-colour);
+    }
+
+    .white path {
+        fill: var(--bg-colour);
+    }
+
+    .outline path {
+        stroke: var(--primary-colour);
+    }
+}
+
+#latexIcon:not(:hover) path {
+    fill: var(--primary-colour);
+}
+
 #wpIcon {
     .bg {
         fill: #ffffff;
@@ -704,6 +736,13 @@ nav {
 }
 
 @media (max-width: 1440px) {
+    #skills {
+        margin-left: 15rem;
+        margin-right: 15rem;
+    }
+}
+
+@media (max-width: 1307px) {
     #skills {
         margin-left: 10rem;
         margin-right: 10rem;
