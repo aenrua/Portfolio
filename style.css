@@ -576,8 +576,24 @@ nav {
     }
 }
 
-#latexIcon:not(:hover) path {
-    fill: var(--primary-colour);
+#latexIcon {
+    .bird {
+        fill: #2b8181;
+    }
+
+    .outline {
+        fill: #34c972;
+    }
+}
+
+#latexIcon:not(:hover) {
+    .bird {
+        fill: var(--primary-colour);
+    }
+
+    .outline {
+        fill: var(--primary-colour);
+    }
 }
 
 #wpIcon {
@@ -635,6 +651,37 @@ nav {
     }
 }
 
+#prIcon {
+    .st0 {
+        fill: #00005B;
+    }
+
+    .st1 {
+        fill: #9999FF;
+    }
+
+    .outline {
+        stroke: #9999FF;
+        stroke-width: 12px;
+        fill: rgba(255, 255, 255, 0);
+    }
+}
+
+#prIcon:not(:hover) {
+    .st0 {
+        fill: var(--primary-colour);
+    }
+
+    .st1 {
+        fill: var(--bg-colour);
+    }
+
+    .outline {
+        stroke: var(--primary-colour);
+        fill: rgba(255, 255, 255, 0);
+    }
+}
+
 #aiIcon {
     .st0 {
         fill: #300;
@@ -666,23 +713,23 @@ nav {
     }
 }
 
-#prIcon {
+#idIcon {
     .st0 {
-        fill: #00005B;
+        fill: #49021F;
     }
 
     .st1 {
-        fill: #9999FF;
+        fill: #FF3366;
     }
 
     .outline {
-        stroke: #9999FF;
+        stroke: #FF3366;
         stroke-width: 12px;
         fill: rgba(255, 255, 255, 0);
     }
 }
 
-#prIcon:not(:hover) {
+#idIcon:not(:hover) {
     .st0 {
         fill: var(--primary-colour);
     }
